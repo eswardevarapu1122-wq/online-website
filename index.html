@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>LearnHub</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#courses">Courses</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Learn New Skills Online</h1>
+    <p>Choose your course and learn from experienced instructors.</p>
+    <a href="#courses" class="main-btn">Explore Courses</a>
+</section>
+
+<section id="categories" class="container">
+    <h2>Course Categories</h2>
+    <div class="categories">
+        <button onclick="filterCourses('All')">All Courses</button>
+        <button onclick="filterCourses('Programming')">Programming</button>
+        <button onclick="filterCourses('Design')">Design</button>
+        <button onclick="filterCourses('Data Science')">Data Science</button>
+        <button onclick="filterCourses('Business')">Business</button>
+    </div>
+</section>
+
+<section id="courses" class="container">
+    <h2>Popular Courses</h2>
+
+    <div class="course-grid">
+
+        <div class="card" data-category="Programming">
+            <div class="course-top">Web Development</div>
+            <div class="card-content">
+                <p class="category">Programming</p>
+                <p>Learn HTML, CSS and JavaScript.</p>
+                <p>Instructor: Rahul Sharma</p>
+                <p>Duration: 8 Weeks</p>
+                <div class="course-bottom">
+                    <h3>Rs. 999</h3>
+                    <button onclick="enroll('Web Development')">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-category="Programming">
+            <div class="course-top">Python Programming</div>
+            <div class="card-content">
+                <p class="category">Programming</p>
+                <p>Learn Python basics and projects.</p>
+                <p>Instructor: Priya Reddy</p>
+                <p>Duration: 6 Weeks</p>
+                <div class="course-bottom">
+                    <h3>Rs. 799</h3>
+                    <button onclick="enroll('Python Programming')">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-category="Data Science">
+            <div class="course-top">Machine Learning</div>
+            <div class="card-content">
+                <p class="category">Data Science</p>
+                <p>Learn algorithms and data prediction.</p>
+                <p>Instructor: Arun Kumar</p>
+                <p>Duration: 10 Weeks</p>
+                <div class="course-bottom">
+                    <h3>Rs. 1499</h3>
+                    <button onclick="enroll('Machine Learning')">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-category="Design">
+            <div class="course-top">UI/UX Design</div>
+            <div class="card-content">
+                <p class="category">Design</p>
+                <p>Design simple and user-friendly websites.</p>
+                <p>Instructor: Sneha Patel</p>
+                <p>Duration: 5 Weeks</p>
+                <div class="course-bottom">
+                    <h3>Rs. 699</h3>
+                    <button onclick="enroll('UI/UX Design')">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-category="Business">
+            <div class="course-top">Digital Marketing</div>
+            <div class="card-content">
+                <p class="category">Business</p>
+                <p>Learn SEO and online marketing.</p>
+                <p>Instructor: Kiran Rao</p>
+                <p>Duration: 4 Weeks</p>
+                <div class="course-bottom">
+                    <h3>Rs. 599</h3>
+                    <button onclick="enroll('Digital Marketing')">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-category="Data Science">
+            <div class="course-top">Data Analytics</div>
+            <div class="card-content">
+                <p class="category">Data Science</p>
+                <p>Learn data analysis and visualization.</p>
+                <p>Instructor: Anil Kumar</p>
+                <p>Duration: 8 Weeks</p>
+                <div class="course-bottom">
+                    <h3>Rs. 1199</h3>
+                    <button onclick="enroll('Data Analytics')">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>LearnHub - Online Learning Platform</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
